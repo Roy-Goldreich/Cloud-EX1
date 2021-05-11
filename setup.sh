@@ -79,7 +79,6 @@ ssh -i "$KEY_PEM" -o "StrictHostKeyChecking=no" -o "ConnectionAttempts=10" ubunt
     sudo apt install --assume-yes npm
     cd EX1
     bash vars.sh
-    sudo iptables -A PRER
     npm install
     sudo iptables -A PREROUTING -t nat -p tcp --dport 80 -j REDIRECT --to-ports 8080
     node app.js
