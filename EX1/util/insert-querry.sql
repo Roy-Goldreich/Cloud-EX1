@@ -1,0 +1,1 @@
+insert into mydb.Parking (plate,lotId) VALUES ("40-687-52",1);

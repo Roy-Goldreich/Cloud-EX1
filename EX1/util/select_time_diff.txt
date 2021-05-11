@@ -1,0 +1,2 @@
+#Will return the differnace in minutes between the entery time and now
+SELECT timestampdiff(MINUTE,entry, NOW()) FROM parks WHERE ticketID = 1;
